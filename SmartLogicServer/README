@@ -1,0 +1,14 @@
+SmartLogicServer
+-- 2011 -- Gerhard de Koning Gans
+
+Compile using:
+  javac -cp scuba.jar SmartLogicServer.java
+
+Run using:
+  java -cp scuba.jar:. SmartLogicServer
+
+
+TODO:
+	
+
+

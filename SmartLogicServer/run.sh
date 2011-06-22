@@ -1,0 +1,2 @@
+java -jar SmartLogicServer.jar
+
