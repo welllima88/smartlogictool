@@ -1,0 +1,10 @@
+SmartLogic Client
+-----------------
+
+The SmartLogic Client software is written for ZTEX USB-FPGA-1.2
+
+ - rename Makefile.default to Makefile.
+ - download the ZTEX SDK from http://ztex.de and define the correct path
+   to your ZTEX SDK folder at the top of your Makefile.
+
+

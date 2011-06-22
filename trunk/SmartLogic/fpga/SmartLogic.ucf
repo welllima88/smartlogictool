@@ -1,0 +1,101 @@
+NET "CLK" TNM_NET = "CLK";
+#NET "CLK" PERIOD = 20 ns HIGH 50 %;
+TIMESPEC TS_CLK = PERIOD "CLK" 20 ns HIGH 50 %;
+#PACE: Start of PACE I/O Pin Assignments
+NET "CLK" LOC = P52;
+NET "pb[0]" IOSTANDARD = LVCMOS33;
+NET "pb[0]" DRIVE = 12;
+NET "pb[0]" LOC = P65;
+NET "pb[0]" FAST;
+NET "pb[1]" IOSTANDARD = LVCMOS33;
+NET "pb[1]" DRIVE = 12;
+NET "pb[1]" LOC = P63;
+NET "pb[1]" FAST;
+NET "pb[2]" IOSTANDARD = LVCMOS33;
+NET "pb[2]" DRIVE = 12;
+NET "pb[2]" LOC = P60;
+NET "pb[2]" FAST;
+NET "pb[3]" IOSTANDARD = LVCMOS33;
+NET "pb[3]" DRIVE = 12;
+NET "pb[3]" LOC = P59;
+NET "pb[3]" FAST;
+NET "pb[4]" IOSTANDARD = LVCMOS33;
+NET "pb[4]" DRIVE = 12;
+NET "pb[4]" LOC = P51;
+NET "pb[4]" FAST;
+NET "pb[5]" IOSTANDARD = LVCMOS33;
+NET "pb[5]" DRIVE = 12;
+NET "pb[5]" LOC = P50;
+NET "pb[5]" FAST;
+NET "pb[6]" IOSTANDARD = LVCMOS33;
+NET "pb[6]" DRIVE = 12;
+NET "pb[6]" LOC = P47;
+NET "pb[6]" FAST;
+NET "pb[7]" IOSTANDARD = LVCMOS33;
+NET "pb[7]" DRIVE = 12;
+NET "pb[7]" LOC = P46;
+NET "pb[7]" FAST;
+NET "pc[0]" IOSTANDARD = LVCMOS33;
+NET "pc[0]" LOC = P58;
+NET "pc[0]" FAST;
+NET "pc[1]" IOSTANDARD = LVCMOS33;
+NET "pc[1]" LOC = P44;
+NET "pc[1]" FAST;
+NET "pc[2]" IOSTANDARD = LVCMOS33;
+NET "pc[2]" LOC = P41;
+NET "pc[2]" FAST;
+NET "pc[3]" IOSTANDARD = LVCMOS33;
+NET "pc[3]" LOC = P40;
+NET "pc[3]" FAST;
+NET "pc[4]" IOSTANDARD = LVCMOS33;
+NET "pc[4]" LOC = P36;
+NET "pc[4]" FAST;
+NET "pc[5]" IOSTANDARD = LVCMOS33;
+NET "pc[5]" LOC = P35;
+NET "pc[5]" FAST;
+NET "pc[6]" IOSTANDARD = LVCMOS33;
+NET "pc[6]" LOC = P33;
+NET "pc[6]" FAST;
+NET "pc[7]" IOSTANDARD = LVCMOS33;
+NET "pc[7]" LOC = P32;
+NET "pc[7]" FAST;
+#NET "pd[0]" IOSTANDARD = LVCMOS33;
+#NET "pd[0]" LOC = P21;
+NET "set_atr" IOSTANDARD = LVCMOS33;
+NET "set_atr" LOC = P20;  # pd[1]
+NET "get_baud" IOSTANDARD = LVCMOS33;
+NET "get_baud" LOC = P18;  # pd[2]
+NET "usb_rst" IOSTANDARD = LVCMOS33;
+NET "usb_rst" DRIVE = 12;
+NET "usb_rst" LOC = P17; # pd[3]
+NET "usb_clk" IOSTANDARD = LVCMOS33;
+NET "usb_clk" LOC = P15;  # pd[4]
+NET "usb_clk" FAST;
+NET "usb_snd" IOSTANDARD = LVCMOS33;
+NET "usb_snd" LOC = P14;  # pd[5]
+NET "fpga_clk" IOSTANDARD = LVCMOS33;
+NET "fpga_clk" DRIVE = 12;
+NET "fpga_clk" LOC = P13;  # pd[6]
+NET "fpga_clk" FAST;
+NET "fpga_snd" IOSTANDARD = LVCMOS33;
+NET "fpga_snd" DRIVE = 12;
+NET "fpga_snd" LOC = P12;  # pd[7]
+NET "CLK" IOSTANDARD = LVCMOS33;
+#NET "sc_io" LOC = P105;
+#NET "sc_clk" LOC = P124;
+#NET "sc_rst" LOC = P103;
+NET "sc_io" LOC = P113;   # C7
+NET "sc_clk" LOC = P124;  # C3
+NET "sc_rst" LOC = P112;  # C2
+# PlanAhead generated IO constraints 
+NET "sc_io" IOSTANDARD = LVCMOS33;
+NET "sc_io" PULLUP;
+
+NET "sc_mirror" LOC = P100; #P118
+NET "sc_mirror" IOSTANDARD = LVCMOS33;
+
+# PlanAhead generated IO constraints 
+NET "sc_clk" IOSTANDARD = LVCMOS33;
+#NET "sc_rst" IOSTANDARD = LVCMOS33;
+NET "sc_rst" IOSTANDARD = LVTTL;
+#Created by Constraints Editor (xc3s400-tq144-4) - 2011/05/12
