@@ -22,8 +22,9 @@
 EP_CONFIG(2,0,BULK,IN,512,2);	 
 EP_CONFIG(4,0,BULK,OUT,512,2);	 
 
-// select ZTEX USB FPGA Module 1.2 as target  (required for FPGA configuration)
-IDENTITY_UFM_1_2(10.11.0.0,0);	 
+// REQUIRED FOR FPGA CONFIGURATION:
+IDENTITY_UFM_1_2(10.11.0.0,0);	     // select ZTEX USB FPGA Module 1.2 as target
+//IDENTITY_UFM_1_11(10.12.0.0,0);	 // select ZTEX USB FPGA Module 1.11 as target
 
 // give them a nice name
 #define[PRODUCT_STRING]["SmartLogic"]
