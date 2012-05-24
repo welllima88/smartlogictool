@@ -740,11 +740,11 @@ class SmartLogic extends Ztex1v1 {
 
 			if (ztex.useServer) {
 				InetAddress host = InetAddress.getLocalHost();
-				Socket socket = new Socket("127.0.0.1", 7777); // host.getHostName()
+				Socket socket = new Socket("10.0.2.2", 7777); // host.getHostName()
 				ztex.ostream = new ObjectOutputStream(socket.getOutputStream());
 				ztex.istream = new ObjectInputStream(socket.getInputStream());
 				// Soms uitzetten...
-				// ATR = ztex.getATR(); // ophalen voor SAM
+				//ATR = ztex.getATR(); // ophalen voor SAM
 			}
 
 			traceMarker mrk = new traceMarker();

@@ -22,9 +22,8 @@
 EP_CONFIG(2,0,BULK,IN,512,2);	 
 EP_CONFIG(4,0,BULK,OUT,512,2);	 
 
-// REQUIRED FOR FPGA CONFIGURATION:
-IDENTITY_UFM_1_2(10.11.0.0,0);	     // select ZTEX USB FPGA Module 1.2 as target
-//IDENTITY_UFM_1_11(10.12.0.0,0);	 // select ZTEX USB FPGA Module 1.11 as target
+// select ZTEX USB FPGA Module 1.11 as target (required for FPGA configuration)
+IDENTITY_UFM_1_11(10.12.0.0,0);	 
 
 // give them a nice name
 #define[PRODUCT_STRING]["SmartLogic"]
@@ -78,13 +77,13 @@ void main(void)
 
 	i = 0; j = 0;
 	rst_prev = 0;
-	report_reset = 0;
+	report_reset = 1;
 	EP2BUSY = 0;
 	ack = 1;
 
 	while(1) {
 
-		if(IOD3 == 1 && rst_prev == 0 && report_reset == 1) {
+		if(IOD3 == 1 && rst_prev == 0 && report_reset == 1 && IOD7 == 0) {
 		//if(IOD3 == 1 && rst_prev == 0) {
 			// REPORT RESET TO CLIENT
 			report_reset = 0;
